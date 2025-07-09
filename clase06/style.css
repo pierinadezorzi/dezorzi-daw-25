@@ -1,0 +1,217 @@
+html{
+
+}
+#titulo{
+    color:brown;
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#helper{
+    background-color: #868686;
+    color: #515252;
+    padding: 10px;
+    font-size: 12px;
+}
+#helper span{
+    margin-left: 10px;
+}
+/* #navbar {
+    background-color: #ccc;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+#navbar nav {
+    float: left; 
+}
+
+#navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar nav ul li {
+    display: inline-block; 
+    margin-right: 15px;
+}
+
+#navbar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+} */
+
+#acciones {
+    float: right; 
+}
+
+#acciones div {
+    display: inline-block; 
+    margin-left: 10px;
+}
+
+#acciones a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#btnDirecto{
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+}
+#btnDirecto a{
+font-weight: 11px;
+color: #ffffff;
+}
+#image-container {
+    width: 500px; 
+    margin: 0 auto;
+}
+
+#images {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+#caption {
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box; 
+    font-size: 10px;
+}
+
+p, h1, h2, h3, h4 {
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box; 
+}
+#cite {
+    width: 500px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    background-color: #868686;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+}
+#autor-cite{
+    display: block;
+    font-size: 11px;
+    padding-top: 10px;
+}
+footer {
+    background-color: #111; 
+    color: #eee;            
+    padding: 20px 10px;     
+    font-family: Arial, sans-serif;
+  }
+  
+  footer h3 {
+    color: #fff;
+    font-size: 18px;        
+    margin-bottom: 15px;    
+  }
+  
+  footer form {
+    max-width: 400px;       
+    margin: 0 auto;
+  }
+  
+  footer form div {
+    margin-bottom: 10px;    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer label {
+    margin-bottom: 3px;     
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  footer input,
+  footer select,
+  footer textarea {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 8px;           
+    border-radius: 4px;     
+    font-size: 12px;        
+  }
+  
+  footer input:focus,
+  footer select:focus,
+  footer textarea:focus {
+    outline: none;
+    border-color: #888;
+    background-color: #333;
+  }
+  
+  footer button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;      
+    font-size: 12px;        
+    border-radius: 4px;     
+    cursor: pointer;
+    margin-top: 8px;        
+  }
+  
+  footer button:hover {
+    background-color: #666;
+  }
+  
+  footer p {
+    text-align: center;
+    margin-top: 20px;       
+    color: #aaa;
+    font-size: 12px;        
+  }
+  .container{
+		display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .contatiner ul li a {
+    text-decoration: none;
+    display: inline-block; 
+    margin-right: 15px;
+  }
+  
+  /* CLASE 6 - FLEXBOX */
+  @media only screen and (max-width: 480px){
+	.container{
+		display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    padding: 10px 20px;
+  }
+
+  .contatiner ul li a {
+    text-decoration: none;
+    gap: 20px; 
+    flex-grow: 1; 
+  }
+  }
