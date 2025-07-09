@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0 0 0.3rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  header .fecha {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #c0c0c0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main.formulario {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  #saludo {
+    text-align: center;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  form#suscripcion-form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 2rem;
+  }
+  
+  /* Form-group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #003366;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus {
+    border-color: #003366;
+    outline: none;
+  }
+  
+  .error {
+    color: #b00020;
+    font-size: 0.85rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+    font-style: italic;
+  }
+  
+  form#suscripcion-form > div[style] {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  form#suscripcion-form > div[style] button {
+    background-color: #003366;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form#suscripcion-form > div[style] button:hover {
+    background-color: #0059b3;
+  }
+  
+  @media (max-width: 768px) {
+    form#suscripcion-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+  .modal-contenido {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    position: relative;
+  }
+  
+  .cerrar {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #modal-titulo {
+    margin-top: 0;
+    color: #003366;
+    font-weight: 700;
+  }
+  
+  #modal-mensaje {
+    white-space: pre-wrap;
+    font-family: monospace;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  

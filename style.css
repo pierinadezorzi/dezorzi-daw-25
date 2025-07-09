@@ -1,177 +1,79 @@
-html{
-
-}
-#titulo{
-    color:brown;
-}
-*{
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
-#helper{
-    background-color: #868686;
-    color: #515252;
-    padding: 10px;
-    font-size: 12px;
-}
-#helper span{
-    margin-left: 10px;
-}
-#navbar {
-    background-color: #ccc;
-    padding: 10px 20px;
-    overflow: hidden;
-}
-
-#navbar nav {
-    float: left; 
-}
-
-#navbar nav ul {
-    list-style: none;
-    padding: 0;
+/* Reset básico */
+* {
+    box-sizing: border-box;
     margin: 0;
-}
-
-#navbar nav ul li {
-    display: inline-block; 
-    margin-right: 15px;
-}
-
-#navbar nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-#acciones {
-    float: right; 
-}
-
-#acciones div {
-    display: inline-block; 
-    margin-left: 10px;
-}
-
-#acciones a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-#btnDirecto{
-    background-color: red;
-    border-radius: 15px;
-    padding: 5px 5px 5px 5px;
-}
-#btnDirecto a{
-font-weight: 11px;
-color: #ffffff;
-}
-#image-container {
-    width: 500px; 
-    margin: 0 auto;
-}
-
-#images {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-}
-
-#caption {
-    width: 100%; 
-    padding: 10px;
-    box-sizing: border-box; 
-    font-size: 10px;
-}
-
-p, h1, h2, h3, h4 {
-    padding-left: 200px;
-    padding-right: 200px;
-    box-sizing: border-box; 
-}
-#cite {
-    width: 500px; 
-    margin: 0 auto; 
-    box-sizing: border-box; 
-    background-color: #868686;
-    border-radius: 10px;
-    padding: 20px;
-    color: #ffffff;
-}
-#autor-cite{
-    display: block;
-    font-size: 11px;
-    padding-top: 10px;
-}
-footer {
-    background-color: #111; /* Fondo negro */
-    color: #eee;            /* Texto gris claro */
-    padding: 20px 10px;     /* Menos espacio en los lados */
+    padding: 0;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
   }
   
-  footer h3 {
-    color: #fff;
-    font-size: 18px;        /* Tamaño de fuente más pequeño */
-    margin-bottom: 15px;    /* Menos espacio debajo del título */
-  }
-  
-  footer form {
-    max-width: 400px;       /* Reducido el ancho máximo */
-    margin: 0 auto;
-  }
-  
-  footer form div {
-    margin-bottom: 10px;    /* Menos espacio entre campos */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  footer label {
-    margin-bottom: 3px;     /* Menos espacio entre el label y el campo */
-    font-weight: bold;
-    color: #ccc;
-  }
-  
-  footer input,
-  footer select,
-  footer textarea {
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #555;
-    padding: 8px;           /* Menos padding */
-    border-radius: 4px;     /* Bordes más redondeados */
-    font-size: 12px;        /* Fuente más pequeña */
-  }
-  
-  footer input:focus,
-  footer select:focus,
-  footer textarea:focus {
-    outline: none;
-    border-color: #888;
-    background-color: #333;
-  }
-  
-  footer button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;      
-    font-size: 12px;        
-    border-radius: 4px;     
-    cursor: pointer;
-    margin-top: 8px;        
-  }
-  
-  footer button:hover {
-    background-color: #666;
-  }
-  
-  footer p {
+  /* Encabezado */
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;       
-    color: #aaa;
-    font-size: 12px;        
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Sección de enlaces */
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+    color: #003366;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    background-color: #e6f0ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  ul li a:hover {
+    background-color: #cce0ff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    color: #666;
   }
   

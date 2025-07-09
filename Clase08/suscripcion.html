@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 9 - Suscripción</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Suscripción</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../TP2/index.html">TP2</a></li>
+        <li><a href="subscription.html">Clase 9 - Suscripción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="formulario">
+    <h2 id="saludo">Bienvenido</h2>
+    <form id="suscripcion-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre">
+        <span class="error" id="error-nombre"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="error-email"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="error-password"></span>
+      </div>
+      <div class="form-group">
+        <label for="repassword">Repetir contraseña</label>
+        <input type="password" id="repassword" name="repassword">
+        <span class="error" id="error-repassword"></span>
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+        <span class="error" id="error-edad"></span>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono">
+        <span class="error" id="error-telefono"></span>
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion">
+        <span class="error" id="error-direccion"></span>
+      </div>
+      <div class="form-group">
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad">
+        <span class="error" id="error-ciudad"></span>
+      </div>
+      <div class="form-group">
+        <label for="cp">Código Postal</label>
+        <input type="text" id="cp" name="cp">
+        <span class="error" id="error-cp"></span>
+      </div>
+      <div class="form-group">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni">
+        <span class="error" id="error-dni"></span>
+      </div>
+      <div style="width: 100%; text-align: center;">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Pierina Dezorzi</p>
+  </footer>
+
+  <script src="js/suscripcion.js"></script>
+<div id="modal" class="modal oculto">
+    <div class="modal-contenido">
+      <span id="cerrar-modal" class="cerrar">&times;</span>
+      <h3 id="modal-titulo"></h3>
+      <pre id="modal-mensaje"></pre>
+    </div>
+  </div>
+  
+</body>
+</html>
